@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "prebuild": "npm install --include=optional || true",
     "build": "node node_modules/vite/bin/vite.js build",
     "dev": "vite",
     "preview": "vite preview"
@@ -73,8 +74,7 @@
     "react-dom": "18.3.1"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.58.0",
-    "@lightningcss/linux-x64-gnu": "1.30.1"
+    "@rollup/rollup-linux-x64-gnu": "4.58.0"
   },
   "devDependencies": {},
   "peerDependencies": {
